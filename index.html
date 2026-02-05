@@ -4,16 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Anjana Arya | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <!-- Navbar -->
   <nav>
-    <div class="container">
+    <div class="container nav-container">
       <h1 class="logo">Anjana Arya</h1>
-      <ul>
+      <ul class="nav-links">
         <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#resume">Resume</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -21,11 +23,60 @@
     </div>
   </nav>
 
+  <!-- Hero / Home Section -->
+  <section id="home" class="hero-section">
+    <div class="container hero-content">
+      <h1>Hi, I am <span>Anjana Arya</span></h1>
+      <p>Data Entry & Excel Expert | Portfolio & Project Management | Document Verification Professional</p>
+    </div>
+  </section>
+
   <!-- About Section -->
   <section id="about" class="section">
     <div class="container">
       <h2>About Me</h2>
-      <p>Hello! I am <strong>Anjana Arya</strong>, a dedicated professional in Data Entry, Excel, and portfolio management. I love creating efficient solutions and keeping work organized.</p>
+      <p>Hello! I am <strong>Anjana Arya</strong>, a dedicated professional with expertise in Data Entry, Excel, and Document Verification. I enjoy organizing projects efficiently and creating impactful solutions.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <h2>My Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <h3>Advanced Excel</h3>
+          <div class="skill-bar"><div class="skill-progress" data-progress="95%"></div></div>
+        </div>
+        <div class="skill">
+          <h3>Data Entry & Verification</h3>
+          <div class="skill-bar"><div class="skill-progress" data-progress="90%"></div></div>
+        </div>
+        <div class="skill">
+          <h3>Project Management</h3>
+          <div class="skill-bar"><div class="skill-progress" data-progress="85%"></div></div>
+        </div>
+        <div class="skill">
+          <h3>Microsoft Office</h3>
+          <div class="skill-bar"><div class="skill-progress" data-progress="95%"></div></div>
+        </div>
+        <div class="skill">
+          <h3>Communication & Teamwork</h3>
+          <div class="skill-bar"><div class="skill-progress" data-progress="90%"></div></div>
+        </div>
+        <div class="skill">
+          <h3>Research & Report Preparation</h3>
+          <div class="skill-bar"><div class="skill-progress" data-progress="85%"></div></div>
+        </div>
+        <div class="skill">
+          <h3>Time Management</h3>
+          <div class="skill-bar"><div class="skill-progress" data-progress="90%"></div></div>
+        </div>
+        <div class="skill">
+          <h3>Problem Solving</h3>
+          <div class="skill-bar"><div class="skill-progress" data-progress="85%"></div></div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -39,40 +90,30 @@
           <p>B.Sc, Life Sciences, Pvt College (2012 - 2015)</p>
         </div>
         <div class="resume-card">
-          <h3>Skills</h3>
-          <ul>
-            <li>Advanced Excel & Data Analysis</li>
-            <li>Document Verification</li>
-            <li>Portfolio & Project Management</li>
-            <li>Communication & Teamwork</li>
-          </ul>
-        </div>
-        <div class="resume-card">
           <h3>Experience</h3>
-          <p>Worked on multiple projects involving data management, reporting, and process optimization.</p>
+          <p>Worked on multiple projects involving data management, reporting, and process optimization. Hands-on experience in Excel, Data Entry, and Document Verification.</p>
         </div>
         <div class="resume-card">
           <h3>Certifications</h3>
-          <p>Internships, online Excel & Data Management courses, etc.</p>
+          <p>Internships, Online Excel & Data Management Courses, Document Verification Training.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="section">
+  <section id="projects" class="section projects-section">
     <div class="container">
       <h2>Projects</h2>
       <div class="projects-grid">
         <div class="project-card">
-          <h3>Project 1</h3>
-          <p>Sample project description goes here.</p>
+          <h3>Excel Revenue Tracker</h3>
+          <p>Improved revenue tracking sheet with formulas, conditional formatting, and charts for easy analysis.</p>
         </div>
         <div class="project-card">
-          <h3>Project 2</h3>
-          <p>Another project description.</p>
+          <h3>Data Entry Automation</h3>
+          <p>Created automated templates for bulk data entry, minimizing errors and saving time.</p>
         </div>
-        <!-- Add more projects as needed -->
       </div>
     </div>
   </section>
@@ -90,5 +131,7 @@
   <footer>
     <p>© 2026 Anjana Arya | Portfolio</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

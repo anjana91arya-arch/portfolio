@@ -1,143 +1,124 @@
-/* Basic Reset */
+/* Reset and base styles */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  background-color: #f4f6f9;
-  color: #333;
-  line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Navbar */
-nav {
-  background-color: #0d6efd;
-  color: white;
-  padding: 15px 0;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+.container {
+    max-width: 800px;
+    margin: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
-nav .nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-nav .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
+header h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  transition: 0.3s;
-}
-
-nav a:hover {
-  color: #ffc107;
-}
-
-/* Hero Section */
-.hero-section {
-  background: linear-gradient(135deg, #0d6efd, #6c63ff);
-  color: white;
-  text-align: center;
-  padding: 100px 20px;
-}
-
-.hero-section h1 span {
-  color: #ffc107;
+.subtitle {
+    font-size: 1.2em;
+    font-weight: 300;
+    color: #ccc;
 }
 
 /* Sections */
-.section {
-  padding: 60px 20px;
+section {
+    margin-bottom: 30px;
 }
 
-.section h2 {
-  text-align: center;
-  color: #0d6efd;
-  margin-bottom: 40px;
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #4a90e2;
+    padding-bottom: 5px;
 }
 
-/* Skills Section */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
+p, ul {
+    margin-bottom: 15px;
 }
 
-.skill {
-  background-color: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
+.job, .edu-item {
+    margin-bottom: 20px;
 }
 
-.skill:hover {
-  transform: translateY(-5px);
+.job h3, .edu-item h3 {
+    font-size: 1.3em;
+    margin-bottom: 5px;
 }
 
-.skill-bar {
-  width: 100%;
-  background: #e0e0e0;
-  border-radius: 10px;
-  margin-top: 10px;
-  height: 15px;
-  overflow: hidden;
+.date {
+    font-style: italic;
+    color: #bbb;
 }
 
-.skill-progress {
-  height: 100%;
-  width: 0;
-  background: #0d6efd;
-  border-radius: 10px;
-  transition: width 1.5s;
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
 }
 
-/* Resume Grid */
-.resume-grid, .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.resume-card, .project-card {
-  background-color: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
-}
-
-.resume-card:hover, .project-card:hover {
-  transform: translateY(-5px);
-}
-
-/* Contact */
-#contact a {
-  color: #0d6efd;
-  text-decoration: none;
-}
-
-#contact a:hover {
-  text-decoration: underline;
+.skill-list li {
+    background: #4a90e2;
+    color: #fff;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: 500;
 }
 
 /* Footer */
 footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #0d6efd;
-  color: white;
-  margin-top: 40px;
+    text-align: center;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+}
+
+footer a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+    
+    header h1 {
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    .skill-list {
+        justify-content: center;
+    }
 }

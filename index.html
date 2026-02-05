@@ -1,137 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anjana Arya | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Your Name] - CV</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <!-- Navbar -->
-  <nav>
-    <div class="container nav-container">
-      <h1 class="logo">Anjana Arya</h1>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- Hero / Home Section -->
-  <section id="home" class="hero-section">
-    <div class="container hero-content">
-      <h1>Hi, I am <span>Anjana Arya</span></h1>
-      <p>Data Entry & Excel Expert | Portfolio & Project Management | Document Verification Professional</p>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="section">
     <div class="container">
-      <h2>About Me</h2>
-      <p>Hello! I am <strong>Anjana Arya</strong>, a dedicated professional with expertise in Data Entry, Excel, and Document Verification. I enjoy organizing projects efficiently and creating impactful solutions.</p>
+        <header>
+            <h1>[Your Name]</h1>
+            <p class="subtitle">[Your Professional Title, e.g., Software Engineer]</p>
+        </header>
+        
+        <section class="summary">
+            <h2>Professional Summary</h2>
+            <p>[A brief 2-3 sentence summary of your background and goals.]</p>
+        </section>
+        
+        <section class="experience">
+            <h2>Work Experience</h2>
+            <div class="job">
+                <h3>[Job Title] at [Company Name]</h3>
+                <p class="date">[Start Date] - [End Date]</p>
+                <ul>
+                    <li>[Achievement or responsibility 1]</li>
+                    <li>[Achievement or responsibility 2]</li>
+                    <li>[Achievement or responsibility 3]</li>
+                </ul>
+            </div>
+            <!-- Add more .job divs as needed -->
+        </section>
+        
+        <section class="education">
+            <h2>Education</h2>
+            <div class="edu-item">
+                <h3>[Degree, e.g., Bachelor's in Computer Science]</h3>
+                <p>[University Name], [Graduation Year]</p>
+            </div>
+            <!-- Add more .edu-item divs as needed -->
+        </section>
+        
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul class="skill-list">
+                <li>[Skill 1, e.g., JavaScript]</li>
+                <li>[Skill 2, e.g., Python]</li>
+                <li>[Skill 3, e.g., Project Management]</li>
+            </ul>
+        </section>
+        
+        <footer>
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:[your.email@example.com]">[your.email@example.com]</a></p>
+            <p>LinkedIn: <a href="[Your LinkedIn URL]" target="_blank">[Your LinkedIn Profile]</a></p>
+            <p>GitHub: <a href="[Your GitHub URL]" target="_blank">[Your GitHub Profile]</a></p>
+        </footer>
     </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="section skills-section">
-    <div class="container">
-      <h2>My Skills</h2>
-      <div class="skills-grid">
-        <div class="skill">
-          <h3>Advanced Excel</h3>
-          <div class="skill-bar"><div class="skill-progress" data-progress="95%"></div></div>
-        </div>
-        <div class="skill">
-          <h3>Data Entry & Verification</h3>
-          <div class="skill-bar"><div class="skill-progress" data-progress="90%"></div></div>
-        </div>
-        <div class="skill">
-          <h3>Project Management</h3>
-          <div class="skill-bar"><div class="skill-progress" data-progress="85%"></div></div>
-        </div>
-        <div class="skill">
-          <h3>Microsoft Office</h3>
-          <div class="skill-bar"><div class="skill-progress" data-progress="95%"></div></div>
-        </div>
-        <div class="skill">
-          <h3>Communication & Teamwork</h3>
-          <div class="skill-bar"><div class="skill-progress" data-progress="90%"></div></div>
-        </div>
-        <div class="skill">
-          <h3>Research & Report Preparation</h3>
-          <div class="skill-bar"><div class="skill-progress" data-progress="85%"></div></div>
-        </div>
-        <div class="skill">
-          <h3>Time Management</h3>
-          <div class="skill-bar"><div class="skill-progress" data-progress="90%"></div></div>
-        </div>
-        <div class="skill">
-          <h3>Problem Solving</h3>
-          <div class="skill-bar"><div class="skill-progress" data-progress="85%"></div></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Resume Section -->
-  <section id="resume" class="section">
-    <div class="container">
-      <h2>Resume</h2>
-      <div class="resume-grid">
-        <div class="resume-card">
-          <h3>Education</h3>
-          <p>B.Sc, Life Sciences, Pvt College (2012 - 2015)</p>
-        </div>
-        <div class="resume-card">
-          <h3>Experience</h3>
-          <p>Worked on multiple projects involving data management, reporting, and process optimization. Hands-on experience in Excel, Data Entry, and Document Verification.</p>
-        </div>
-        <div class="resume-card">
-          <h3>Certifications</h3>
-          <p>Internships, Online Excel & Data Management Courses, Document Verification Training.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="section projects-section">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <h3>Excel Revenue Tracker</h3>
-          <p>Improved revenue tracking sheet with formulas, conditional formatting, and charts for easy analysis.</p>
-        </div>
-        <div class="project-card">
-          <h3>Data Entry Automation</h3>
-          <p>Created automated templates for bulk data entry, minimizing errors and saving time.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:anjana91arya@gmail.com">anjana91arya@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/anjanaarya/">linkedin.com/in/anjanaarya</a></p>
-      <p>GitHub: <a href="https://github.com/anjana91arya-arch">github.com/anjana91arya-arch</a></p>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2026 Anjana Arya | Portfolio</p>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
